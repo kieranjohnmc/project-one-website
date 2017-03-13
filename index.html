@@ -8,8 +8,8 @@
     <!-- Optional theme -->
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
 
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
@@ -23,17 +23,50 @@
                     <span class="icon-bar"></span>
                 </button>
             </div>
-            <div id="navbar" class="navbar-collapse collapse">
-                <span class="glyphicon glyphicon-align-justify" style="color:azure; font-size:38px; padding-top: 30px;"></span>
+            <div id="navbar" class="navbar-collapse collapse icon">
+                <span class="glyphicon glyphicon-align-justify navbar-right icon" style="font-size:38px; padding-top: 30px;" onclick="openNav()"></span>
             </div>
             <!--/.nav-collapse -->
         </div>
     </nav>
 
+    <div id="mySidenav" class="sidenav">
+        <a href="#">Home</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Find Us</a>
+        <a href="#">Apprenticeships</a>
+    </div>
+
+    <!-- Content -->
+    <div id="main">
+        ...
+    </div>
+
+    <script>
+        var sidenav = document.getElementById("mySidenav");
+        var main = document.getElementById("main")
+
+        function openNav() {
+            if (sidenav.style.width == "0px" && main.style.marginLeft == "0px") {
+                sidenav.style.width = "250px";
+                main.style.marginLeft = "250px";
+            } else {
+                sidenav.style.width = "0";
+                main.style.marginLeft = "0";
+            }
+        }
+    </script>
+
+
+
+
 
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 
 </html>
