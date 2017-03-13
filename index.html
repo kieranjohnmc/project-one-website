@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-fixed-top" style="background-color: #2c3e50; height: 100px">
+    <nav class="navbar navbar-fixed-top" style="background-color: #2c3e50; height: 75px">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -24,7 +24,7 @@
                 </button>
             </div>
             <div id="navbar" class="navbar-collapse collapse icon">
-                <span class="glyphicon glyphicon-align-justify navbar-right icon" style="font-size:38px; padding-top: 30px;" onclick="openNav()"></span>
+                <span class="glyphicon glyphicon-align-justify navbar-right icon" onclick="openNav()"></span>
             </div>
             <!--/.nav-collapse -->
         </div>
@@ -35,11 +35,14 @@
         <a href="#">Contact Us</a>
         <a href="#">Find Us</a>
         <a href="#">Apprenticeships</a>
+        <p>"Made By Team Space Marines"</p>
     </div>
 
     <!-- Content -->
-    <div id="main">
-        ...
+    <div id="main" class="cover">
+        <div class="clearfix">
+            <h1 style="text-align: center; color: white; font-size: 70px; padding-top: 300px">First Choice</h1>
+        </div>
     </div>
 
     <script>
@@ -48,8 +51,8 @@
 
         function openNav() {
             if (sidenav.style.width == "0px" && main.style.marginLeft == "0px") {
-                sidenav.style.width = "250px";
-                main.style.marginLeft = "250px";
+                sidenav.style.width = "200px";
+                main.style.marginLeft = "200px";
             } else {
                 sidenav.style.width = "0";
                 main.style.marginLeft = "0";
