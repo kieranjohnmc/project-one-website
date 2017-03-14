@@ -8,19 +8,19 @@ img#banner {
 }
 
 .absolute-text{
-	position: absolute; 
-	bottom: 0; 
-	font-family: "calibri"; 
+	position: absolute;
+	bottom: 0;
+	font-family: "calibri";
 	background: rgba(5,5,5,0.25);
-	padding: 10px 10px; 
-	width: 100%; 
+	padding: 10px 10px;
+	width: 100%;
 	text-align: center;
 	color: #fff;
 	margin-bottom: 0px;
 }
 
 .absolute-text a{
-	font-size:16px; 
+	font-size:16px;
 	color:#b92b27;
 }
 
@@ -71,3 +71,35 @@ img#banner {
 #text-format {
 	text-align: justify;
 }
+/* Start of Footer */
+footer{
+    color: #fff;
+    background-color: #2c3e50;
+    background-color: #282928;
+		padding: 60px 40px;
+}
+footer a {
+color: #ffffff
+}
+footer ul {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+footer a:link {
+    text-decoration: none;
+}
+
+footer a:visited {
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: aquamarine;
+}
+footer a:active {
+    text-decoration: none;
+}
+
+/* End of Footer */
