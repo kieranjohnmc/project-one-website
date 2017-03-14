@@ -35,7 +35,10 @@
     padding-right: 100px;
     padding-top: 15px;
 }
-h1
-{
-	text-decoration: underline;
+
+.bgimg {
+    color: rgb(255, 255, 255);
+    position: relative;
+    min-height: 800px;
+    background: url("../Images/Medals.jpg") no-repeat scroll 0px 100% / cover transparent;
 }
