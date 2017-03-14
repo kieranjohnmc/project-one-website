@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Networking | First Choice</title>
+	<title>Networking | First Choice</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
@@ -11,9 +11,9 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/index.css">
-
-	<!-- Css for main page -->
-	<link rel="stylesheet" href="css/Apprentices.css">
+	
+	<!-- Custom CSS -->
+    <link rel="stylesheet" href="css/Apprentices.css">
 </head>
 
 <body onscroll="navscroll()">
@@ -28,7 +28,7 @@
                 </button>
             </div>
             <div id="navbar" class="navbar-collapse collapse icon">
-                <span id="toggler" class="glyphicon glyphicon-menu-hamburger navbar-right icon" onclick="openNav()" style="right: -150px"></span>
+                <span id="toggler" class="glyphicon glyphicon-menu-hamburger navbar-right icon" onclick="openNav()" style="right: 50px"></span>
             </div>
             <!--/.nav-collapse -->
         </div>
@@ -113,7 +113,7 @@ This Apprenticeship is made to fit around an apprentice's skills and areas for d
 		</div>
     </div>
 
-    <script>
+	<script>
         var sidenav = document.getElementById("mySidenav");
         var main = document.getElementById("main");
         var navbar = document.getElementById("navbar");
@@ -123,12 +123,12 @@ This Apprenticeship is made to fit around an apprentice's skills and areas for d
             if (sidenav.style.width == "0px" && main.style.marginRight == "0px") {
                 sidenav.style.width = "200px";
                 main.style.marginRight = "200px";
-                toggler.style.right = "50px";
+                toggler.style.right = "200px";
             } else {
                 sidenav.style.width = "0";
                 main.style.marginRight = "0";
                 toggler.style.transition = "0.5s";
-                toggler.style.right = "-150px";
+                toggler.style.right = "50px";
             }
         }
 
