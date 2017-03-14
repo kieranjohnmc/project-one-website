@@ -58,11 +58,8 @@
 }
 
 #main {
-<<<<<<< HEAD
-    transition: margin-left .5s;
-=======
     transition: margin-right .5s;
->>>>>>> refs/remotes/origin/master
+
 }
 
 .cover {
