@@ -40,7 +40,6 @@ img#banner {
 }
 
 #Positions {
-	height: 300px;
 	border-left: 0.5px solid rgba( 5, 5, 5, 0.1);
 }
 
@@ -71,6 +70,7 @@ img#banner {
 #text-format {
 	text-align: justify;
 }
+
 /* Start of Footer */
 footer{
     color: #fff;
