@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Software Development | First Choice</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/index.css">
+	
+	<!-- Custom CSS -->
+    <link rel="stylesheet" href="css/Apprentices.css">
+</head>
+
+<body onscroll="navscroll()">
+    <nav id="navbar" class="navbar navbar-fixed-top" style="background-color: transparent; height: 75px">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse icon">
+                <span id="toggler" class="glyphicon glyphicon-menu-hamburger navbar-right icon" onclick="openNav()" style="right: 50px"></span>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </nav>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="#">Home</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Find Us</a>
+        <a href="#">Apprenticeships</a>
+    </div>
+
+        <!-- Content -->
+    <div id="main">
+        <!--main content starts-->
+		<div class="relative col-md-12">
+			<img id="banner" src="images/software-dev.png" alt="Software Development Banner" title="Software Development Banner"/>
+			<h1 class="absolute-text">Software Development Apprenticeship</h1>
+		</div>
+
+		<br/><br/>
+		<div class="row relative">
+			<div class="col-md-2 padded"> <!--page padding-->
+			</div>
+			<div class="col-md-8 pad-top">
+				<p id="text-format">
+				Over the two-year programme, you’ll get a mix of university-delivered classroom and lab education in state-of-the-art facilities along with technical training, mentoring and job shadowing, and hands-on, work-based placements and projects.
+<br/><br/>
+You’ll be taking on real business challenges in areas of software engineering. There’s a strong emphasis on programming and technology, so a keen interest in these areas is important.
+<br/><br/>
+Join us, and you won’t just be learning about some of the world’s most advanced technology. You’ll also be developing softer skills like teamwork, communication and leadership, while earning a competitive salary and benefits. 
+</div>
+			<div class="col-md-2 pad-top"> <!--page padding-->
+			</div>
+		</div>
+
+		<div class="row relative">
+			<div class="col-md-2"> <!--page padding-->
+			</div>
+			<div class="col-md-8">
+				<div class="relative col-md-4">
+					<div>
+						<div class="col-md-12"><h5 class="PositionH">Filters</h5></div>
+						<form>
+							<div class="col-md-12 relative">Postcode: <input class="right" type="text" name="PostCode"></div>
+							<div class="col-md-12 pad-top relative">Within:
+								<select class="right" name="Within">
+									<option value="5">5 Miles</option>
+									<option value="10">10 Miles</option>
+									<option value="15">15 Miles</option>
+									<option value="20">20 Miles</option>
+									<option value="30">30 Miles</option>
+									<option value="40">40 Miles</option>
+									<option value="More">More</option>
+								</select>
+							</div>
+							<div class="col-md-12 pad-top relative">Apprenticeship Level:
+								<select class="right" name="Level">
+									<option value="All">All Levels</option>
+									<option value="Intermediate">Intermediate</option>
+									<option value="Advanced">Advanced</option>
+									<option value="Higher">Higher</option>
+									<option value="Degree">Degree</option>
+								</select>
+							</div>
+							<div class="col-md-12 pad-top relative">Company: <br/>
+								<label id="plain"><input type="checkbox" name="SelectAll" value="Select All"> Select All</label><br/>
+								<label id="plain"><input type="checkbox" name="Fujitsu" value="Fujitsu"> Fujitsu</label><br/>
+								<label id="plain"><input type="checkbox" name="Capgemini" value="Capgemini"> Capgemini</label><br/>
+								<label id="plain"><input type="checkbox" name="Cisco" value="Cisco"> Cisco</label><br/>
+							</div>
+							<div class="col-md-12 pad-top pad-bottom relative" id="centered"><input type="submit" name="Filter" value="Filter"></div>
+						</form>
+					</div>
+				</div>
+				<div class="left-pad col-md-8">
+					<div class="left-pad" id="Positions">
+						Placement
+					</div>
+				</div>
+			</div>
+			<div class="col-md-2"> <!--page padding-->
+			</div>
+		</div>
+    </div>
+
+	<script>
+        var sidenav = document.getElementById("mySidenav");
+        var main = document.getElementById("main");
+        var navbar = document.getElementById("navbar");
+        var toggler = document.getElementById("toggler");
+
+        function openNav() {
+            if (sidenav.style.width == "0px" && main.style.marginRight == "0px") {
+                sidenav.style.width = "200px";
+                main.style.marginRight = "200px";
+                toggler.style.right = "200px";
+            } else {
+                sidenav.style.width = "0";
+                main.style.marginRight = "0";
+                toggler.style.transition = "0.5s";
+                toggler.style.right = "50px";
+            }
+        }
+
+        function navscroll() {
+            if (document.body.scrollTop > 50) {
+                navbar.style.transition = "0.5s";
+                navbar.style.backgroundColor = "#282928";
+            } else {
+                navbar.style.transition = "0.5s";
+                navbar.style.backgroundColor = "transparent";
+            }
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+
+</html>
