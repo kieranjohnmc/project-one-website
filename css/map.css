@@ -19,7 +19,7 @@ body{
 /* Start of Footer */
 footer{
     color: #fff;
-    background-color: #2c3e50;
+    background-color: #282928;
 	padding: 60px 40px;
 }
 footer a {
@@ -29,21 +29,21 @@ footer ul {
     text-decoration: none;
     list-style-type: none;
 }
-
-/* End of Footer */
-a:link {
+footer a:link {
     text-decoration: none;
 }
 
-a:visited {
+footer a:visited {
     text-decoration: none;
 }
 
-a:hover {
+footer a:hover {
     text-decoration: none;
     color: aquamarine;
 }
 
-a:active {
+footer a:active {
     text-decoration: none;
 }
+
+/* End of Footer */
