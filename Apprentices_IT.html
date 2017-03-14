@@ -2,8 +2,6 @@
 <html>
 
 <head>
-	<title>IT Infrastructure | First Choice</title>
-
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
@@ -13,12 +11,12 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/index.css">
 	
-	<!-- Adding in css for image banner -->
+	<!-- Css for main page -->
 	<link rel="stylesheet" href="css/Apprentices.css">
 </head>
 
-<body>
-    <nav class="navbar navbar-fixed-top" style="background-color: #2c3e50; height: 100px">
+<body onscroll="navscroll()">
+    <nav id="navbar" class="navbar navbar-fixed-top" style="background-color: transparent; height: 75px">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -29,7 +27,7 @@
                 </button>
             </div>
             <div id="navbar" class="navbar-collapse collapse icon">
-                <span class="glyphicon glyphicon-align-justify navbar-right icon" style="font-size:38px; padding-top: 30px;" onclick="openNav()"></span>
+                <span id="toggler" class="glyphicon glyphicon-menu-hamburger navbar-right icon" onclick="openNav()" style="right: -150px"></span>
             </div>
             <!--/.nav-collapse -->
         </div>
@@ -42,10 +40,9 @@
         <a href="#">Apprenticeships</a>
     </div>
 
-    <!-- Content -->
+        <!-- Content -->
     <div id="main">
         <!--main content starts-->
-		<br/><br/><br/><br/>
 		<div class="relative col-md-12">
 			<img id="banner" src="images/infrastructure.png" alt="Infrastructure Banner" title="Infrastructure Banner"/>
 			<h1 class="absolute-text">IT Infrastructure Apprenticeship</h1>
@@ -121,15 +118,30 @@ Te usu platonem eloquentiam, mandamus vulputate expetendis ei has. Mundi graecis
 
     <script>
         var sidenav = document.getElementById("mySidenav");
-        var main = document.getElementById("main")
+        var main = document.getElementById("main");
+        var navbar = document.getElementById("navbar");
+        var toggler = document.getElementById("toggler");
 
         function openNav() {
-            if (sidenav.style.width == "0px" && main.style.marginLeft == "0px") {
-                sidenav.style.width = "250px";
-                main.style.marginLeft = "250px";
+            if (sidenav.style.width == "0px" && main.style.marginRight == "0px") {
+                sidenav.style.width = "200px";
+                main.style.marginRight = "200px";
+                toggler.style.right = "50px";
             } else {
                 sidenav.style.width = "0";
-                main.style.marginLeft = "0";
+                main.style.marginRight = "0";
+                toggler.style.transition = "0.5s";
+                toggler.style.right = "-150px";
+            }
+        }
+
+        function navscroll() {
+            if (document.body.scrollTop > 50) {
+                navbar.style.transition = "0.5s";
+                navbar.style.backgroundColor = "#282928";
+            } else {
+                navbar.style.transition = "0.5s";
+                navbar.style.backgroundColor = "transparent";
             }
         }
     </script>
