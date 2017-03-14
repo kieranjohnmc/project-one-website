@@ -2,17 +2,19 @@
 <html>
 
 <head>
+	<title>IT Infrastructure | First Choice</title>
+
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
     <!-- Optional theme -->
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
 
-	<!-- Linking in image banner css -->
-	<link rel="stylesheet" href="css/img-width.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/index.css">
 	
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<!-- Adding in css for image banner -->
+	<link rel="stylesheet" href="css/Apprentices.css">
 </head>
 
 <body>
@@ -26,51 +28,118 @@
                     <span class="icon-bar"></span>
                 </button>
             </div>
-            <div id="navbar" class="navbar-collapse collapse">
-                <span class="glyphicon glyphicon-align-justify" style="color:azure; font-size:38px; padding-top: 30px;"></span>
+            <div id="navbar" class="navbar-collapse collapse icon">
+                <span class="glyphicon glyphicon-align-justify navbar-right icon" style="font-size:38px; padding-top: 30px;" onclick="openNav()"></span>
             </div>
             <!--/.nav-collapse -->
-        </div>	
+        </div>
     </nav>
-	
-	<!--main content starts-->
-	<br/><br/><br/><br/><br/>
-	<div class="col-md-12" id="relative">
-		<img id="banner" src="images/infrastructure.jpeg" alt="Infrastructure Banner" title="Infrastructure Banner"/>
-		<h1 class="absolute-text">Infrastructure Apprenticeship</h1>
-	</div>
-	
-	<br/><br/>
-	<div class="row">
-		<div class="col-md-2"> <!--page padding-->
+
+    <div id="mySidenav" class="sidenav">
+        <a href="#">Home</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Find Us</a>
+        <a href="#">Apprenticeships</a>
+    </div>
+
+    <!-- Content -->
+    <div id="main">
+        <!--main content starts-->
+		<br/><br/><br/><br/>
+		<div class="relative col-md-12">
+			<img id="banner" src="images/infrastructure.png" alt="Infrastructure Banner" title="Infrastructure Banner"/>
+			<h1 class="absolute-text">IT Infrastructure Apprenticeship</h1>
 		</div>
-		<div class="col-md-8">
-			<p>Lorem ipsum dolor sit amet, ut nam velit deserunt, has ex oratio dicunt rationibus. Cu invidunt convenire posidonium ius. Alienum tacimates ex mea, sea ne omnes luptatum. An integre quaestio eos. Ius id aliquam facilisis interpretaris, vim et dicam prompta interesset. No quem corpora oportere eos, hinc malis has id.
+	
+		<br/><br/>
+		<div class="row relative">
+			<div class="col-md-2 padded"> <!--page padding-->
+			</div>
+			<div class="col-md-8 pad-top">
+				<p>Lorem ipsum dolor sit amet, ut nam velit deserunt, has ex oratio dicunt rationibus. Cu invidunt convenire posidonium ius. Alienum tacimates ex mea, sea ne omnes luptatum. An integre quaestio eos. Ius id aliquam facilisis interpretaris, vim et dicam prompta interesset. No quem corpora oportere eos, hinc malis has id.
 <br/><br/>
 Congue erroribus conceptam ad nam. Adversarium consequuntur mediocritatem no quo. Cum at erroribus assueverit, eu fierent imperdiet duo, eligendi epicurei his cu. Sale delicata scribentur ei est, pri epicurei invenire ullamcorper ea, ex tritani ponderum facilisi mei. Per eu omnium ancillae. Et mea paulo viris, cu officiis senserit duo.
 <br/><br/>
 Cu duo possim accommodare, has adhuc accusam abhorreant an. Ne viderer consetetur vim, viderer repudiare vix ne. Choro mandamus cu usu, mel ad primis appareat hendrerit. Et suas brute malorum nec, iuvaret qualisque no sed, vix id zril accumsan.
 <br/><br/>
 Te usu platonem eloquentiam, mandamus vulputate expetendis ei has. Mundi graecis invenire ius id, elit soleat ei vim. Platonem recteque scribentur an vix. Cu nec insolens vituperatoribus, vix no purto simul malorum. Decore audiam alienum ea usu, eum id natum torquatos, mea te omnes discere lobortis. No novum feugait accumsan mel, tale oblique debitis an pri.
-			</p>
+				</p>		<hr/>
+			</div>
+			<div class="col-md-2 pad-top"> <!--page padding-->
+			</div>
 		</div>
-		<div class="col-md-2"> <!--page padding-->
-		</div>
-	</div>
 		
-	<div class="row">
-		<div class="col-md-1"> <!--page padding-->
+		<div class="row relative">
+			<div class="col-md-2"> <!--page padding-->
+			</div>
+			<div class="col-md-8">
+				<div class="relative col-md-4">
+					<div>
+						<div class="col-md-12"><h5 class="PositionH">Filters</h5></div>
+						<form>
+							<div class="col-md-12 relative">Postcode: <input class="right" type="text" name="PostCode"></div>
+							<div class="col-md-12 pad-top relative">Within: 
+								<select class="right" name="Within">
+									<option value="5">5 Miles</option>
+									<option value="10">10 Miles</option>
+									<option value="15">15 Miles</option>
+									<option value="20">20 Miles</option>
+									<option value="30">30 Miles</option>
+									<option value="40">40 Miles</option>
+									<option value="More">More</option>
+								</select>
+							</div>
+							<div class="col-md-12 pad-top relative">Apprenticeship Level: 
+								<select class="right" name="Level">
+									<option value="All">All Levels</option>
+									<option value="Intermediate">Intermediate</option>
+									<option value="Advanced">Advanced</option>
+									<option value="Higher">Higher</option>
+									<option value="Degree">Degree</option>
+								</select>
+							</div>
+							<div class="col-md-12 pad-top relative">Company: <br/>
+								<label id="plain"><input type="checkbox" name="SelectAll" value="Select All"> Select All</label><br/>
+								<label id="plain"><input type="checkbox" name="Fujitsu" value="Fujitsu"> Fujitsu</label><br/>
+								<label id="plain"><input type="checkbox" name="Capgemini" value="Capgemini"> Capgemini</label><br/>
+								<label id="plain"><input type="checkbox" name="Cisco" value="Cisco"> Cisco</label><br/>
+							</div>
+							<div class="col-md-12 pad-top pad-bottom relative" id="centered"><input type="submit" name="Filter" value="Filter"></div>
+						</form>
+					</div>
+				</div>
+				<div class="left-pad col-md-8">
+					<div class="left-pad" id="Positions">
+						Placement
+					</div>
+				</div>
+			</div>
+			<div class="col-md-2"> <!--page padding-->
+			</div>
 		</div>
-		<div class="col-md-10">
-		
-		</div>
-		<div class="col-md-1"> <!--page padding-->
-		</div>
-	</div>
-		
+    </div>
+
+    <script>
+        var sidenav = document.getElementById("mySidenav");
+        var main = document.getElementById("main")
+
+        function openNav() {
+            if (sidenav.style.width == "0px" && main.style.marginLeft == "0px") {
+                sidenav.style.width = "250px";
+                main.style.marginLeft = "250px";
+            } else {
+                sidenav.style.width = "0";
+                main.style.marginLeft = "0";
+            }
+        }
+    </script>
+
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 
 </html>
