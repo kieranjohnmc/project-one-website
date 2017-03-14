@@ -10,12 +10,12 @@
     z-index: 1;
     /* Stay on top */
     top: 0;
-    left: 0;
-    background-color: #34495e;
+    right: 0;
+    background-color: #ecf0f1;
     /* Black*/
     overflow-x: hidden;
     /* Disable horizontal scroll */
-    padding-top: 100px;
+    padding-top: 75px;
     /* Place content 60px from the top */
     transition: 0.5s;
     /* 0.5 second transition effect to slide in the sidenav */
@@ -24,15 +24,29 @@
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 18px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.sidenav p {
+    padding-top: 640px;
+    padding-left: 2px;
+    font-weight: bold;
+    font-size: 10px;
     color: #fff;
     display: block;
-    transition: 0.3s
+    transition: 0.3s;
+    text-align: center;
+    white-space: nowrap;
 }
 
 .sidenav a:hover,
 .offcanvas a:focus {
-    background-color: #415b76;
+    background-color: #ecf0f1
 }
 
 .sidenav .closebtn {
@@ -44,15 +58,29 @@
 }
 
 #main {
+<<<<<<< HEAD
     transition: margin-left .5s;
+=======
+    transition: margin-right .5s;
+    padding: 20px;
+>>>>>>> refs/remotes/origin/master
+}
+
+.cover {
+    color: rgb(255, 255, 255);
+    position: relative;
+    min-height: 800px;
+    background: url("https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/MRF1628S9A.jpg") no-repeat scroll 0px 100% / cover transparent;
 }
 
 .icon {
-    color: azure;
+    color: #ecf0f1;
+    font-size: 38px;
+    padding-top: 10px;
 }
 
 .icon span:hover {
-    color: azure;
+    color: #d3dcde;
 }
 
 @media screen and (max-height: 450px) {
