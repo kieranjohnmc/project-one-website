@@ -10,11 +10,10 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/index.css">
-     <link rel="stylesheet" href="css/Award_CSS.css">
 </head>
 
 <body onscroll="navscroll()">
-    <nav id="navbar" class="navbar navbar-fixed-top" style="background-color: #282928; height: 75px">
+    <nav id="navbar" class="navbar navbar-fixed-top" style="background-color: transparent; height: 75px">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -39,14 +38,10 @@
     </div>
 
     <!-- Content -->
-    <div class="bgimg">
-        <div class="clearfix">
-            <h1 style="text-align: center; color: white; font-size: 70px; padding-top: 300px; color: black;">First Choice</h1>
-        </div>
-    </div>
-    <div id="main">
-    <!-- Image as Header -->
-
+    <div></div>
+    <div class="" id="main">
+    <!-- Page Heading -->
+    <center><h1 id="Title">Awards</h1></center>
 
 <!-- Start of the Award page main body -->
 <div class="media">
@@ -121,6 +116,16 @@ In the Midlands, we were also able to win an award for training provider of the 
                 main.style.marginRight = "0";
                 toggler.style.transition = "0.5s";
                 toggler.style.right = "-150px";
+            }
+        }
+
+        function navscroll() {
+            if (document.body.scrollTop > 50) {
+                navbar.style.transition = "0.5s";
+                navbar.style.backgroundColor = "#282928";
+            } else {
+                navbar.style.transition = "0.5s";
+                navbar.style.backgroundColor = "transparent";
             }
         }
     </script>

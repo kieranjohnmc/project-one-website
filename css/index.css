@@ -79,6 +79,12 @@
     color: #d3dcde;
 }
 
+
+.cover-img {
+    background-image: url("Images/Medals.jpg") cover no-repeat;
+    width: 100%;
+}
+
 @media screen and (max-height: 450px) {
     .sidenav {
         padding-top: 15px;

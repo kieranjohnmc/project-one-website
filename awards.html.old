@@ -7,14 +7,16 @@
 
     <!-- Optional theme -->
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    
+    <!-- Awards StyleSheet -->
+    <link rel="stylesheet" type="text/css" href="css/Award_CSS.css">
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/index.css">
-     <link rel="stylesheet" href="css/Award_CSS.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
 
-<body onscroll="navscroll()">
-    <nav id="navbar" class="navbar navbar-fixed-top" style="background-color: #282928; height: 75px">
+<body>
+    <nav class="navbar navbar-fixed-top" style="background-color: #2c3e50; height: 100px">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -24,29 +26,17 @@
                     <span class="icon-bar"></span>
                 </button>
             </div>
-            <div id="navbar" class="navbar-collapse collapse icon">
-                <span id="toggler" class="glyphicon glyphicon-menu-hamburger navbar-right icon" onclick="openNav()" style="right: -150px"></span>
+            <div id="navbar" class="navbar-collapse collapse">
+                <span class="glyphicon glyphicon-align-justify" style="color:azure; font-size:38px; padding-top: 30px;"></span>
             </div>
             <!--/.nav-collapse -->
         </div>
     </nav>
 
-    <div id="mySidenav" class="sidenav">
-        <a href="#">Home</a>
-        <a href="#">Contact Us</a>
-        <a href="#">Find Us</a>
-        <a href="#">Apprenticeships</a>
-    </div>
+    <body>
 
-    <!-- Content -->
-    <div class="bgimg">
-        <div class="clearfix">
-            <h1 style="text-align: center; color: white; font-size: 70px; padding-top: 300px; color: black;">First Choice</h1>
-        </div>
-    </div>
-    <div id="main">
-    <!-- Image as Header -->
-
+    <!-- Page Heading -->
+    <center><h1 id="Title">Awards</h1></center>
 
 <!-- Start of the Award page main body -->
 <div class="media">
@@ -103,38 +93,13 @@ In the Midlands, we were also able to win an award for training provider of the 
 </p>
 </div></div>
 <!-- End of the Award Main body -->
-    </div>
 
-    <script>
-        var sidenav = document.getElementById("mySidenav");
-        var main = document.getElementById("main");
-        var navbar = document.getElementById("navbar");
-        var toggler = document.getElementById("toggler");
-
-        function openNav() {
-            if (sidenav.style.width == "0px" && main.style.marginRight == "0px") {
-                sidenav.style.width = "200px";
-                main.style.marginRight = "200px";
-                toggler.style.right = "50px";
-            } else {
-                sidenav.style.width = "0";
-                main.style.marginRight = "0";
-                toggler.style.transition = "0.5s";
-                toggler.style.right = "-150px";
-            }
-        }
-    </script>
-
-
-
+</body>
 
 
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 
 </html>
