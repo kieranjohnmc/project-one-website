@@ -9,7 +9,7 @@
 </head>
 
 <body onscroll="navscroll()" id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-    <nav id="navbar" class="navbar navbar-fixed-top" style="background-color: transparent; height: 75px">
+    <nav id="navbar" class="navbar navbar-fixed-top" style="background-color: #282928; height: 75px">
         <div class="container">
             <div class="navbar-header navbar-right" style="margin-top: 8px;">
                 <span id="toggler" class="glyphicon glyphicon-menu-hamburger navbar-right icon" onclick="openNav()" style="right: 50px"></span>
@@ -68,16 +68,6 @@
                 main.style.marginRight = "0";
                 toggler.style.transition = "0.5s";
                 toggler.style.right = "50px";
-            }
-        }
-
-        function navscroll() {
-            if (document.body.scrollTop > 50) {
-                navbar.style.transition = "0.5s";
-                navbar.style.backgroundColor = "#282928";
-            } else {
-                navbar.style.transition = "0.5s";
-                navbar.style.backgroundColor = "transparent";
             }
         }
     </script>
