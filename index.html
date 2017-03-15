@@ -2,31 +2,35 @@
 <html>
 
 <head>
-    <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-
-    <!-- Optional theme -->
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/scrolling-nav.css">
 </head>
 
-<body onscroll="navscroll()">
+<body onscroll="navscroll()" id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
     <nav id="navbar" class="navbar navbar-fixed-top" style="background-color: transparent; height: 75px">
         <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
+            <div class="navbar-header navbar-right" style="margin-top: 8px;">
+                <span id="toggler" class="glyphicon glyphicon-menu-hamburger navbar-right icon" onclick="openNav()" style="right: 50px"></span>
             </div>
-            <div id="navbar" class="navbar-collapse collapse icon">
-                <span id="toggler" class="glyphicon glyphicon-menu-hamburger navbar-right icon" onclick="openNav()" style="right: -150px"></span>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-left">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden" style="text-decoration: none;">
+                        <a class="scroll-item page-scroll " href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="scroll-item page-scroll " href="#page-top">Home</a>
+                    </li>
+                    <li>
+                        <a class="scroll-item page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="scroll-item page-scroll" href="#services">Services</a>
+                    </li>
+                </ul>
             </div>
-            <!--/.nav-collapse -->
         </div>
     </nav>
 
@@ -34,46 +38,86 @@
         <a href="#">Home</a>
         <a href="#">Contact Us</a>
         <a href="#">Find Us</a>
-        <a href="#">Apprenticeships</a>
+        <a href="#" class="dropdown-toggle">Apprenticeships<span class="caret"></span></a>
     </div>
 
     <!-- Content -->
-    <div></div>
     <div class="cover" id="main">
         <div class="clearfix">
-            <h1 style="text-align: center; color: white; font-size: 70px; padding-top: 300px;">First Choice</h1>
+            <h1 style="text-align: center; color: white; font-size: 70px; padding-top: 300px; text-shadow: 2px 2px black">First Choice</h1>
         </div>
     </div>
-    <section class="container-fluid" id="section2">
-        <div class="row">
-            <div class="col-sm-8 col-sm-offset-2 text-center">
-                <h1>What is Bootstrap?</h1>
-                <br>
-                <p class="lead">Bootstrap is a free collection of tools for creating websites and web applications. It contains HTML and CSS-based design templates for typography, forms, buttons, navigation and other interface components, as well as optional JavaScript
-                    extensions. It is the No.1 project on GitHub with 65,000+ stars and 23,800 forks (as of March 2014) [1] and has been used by NASA and MSNBC, among many others..</p>
-                <br>
-                <i style="font-size:120px" class="fa fa-camera fa-5x"></i>
-                <p>Big 'ol Camera Icon</p>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="embed-responsive">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/A9Hd8vUp2WE"></iframe>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title" style="font-size: 18px">Higher Apprenticeships</h3>
+                        </div>
+                        <div class="panel-body" style="font-size: 18px">
+                            <div class="panel-image"></div>
+                            We offer "Higher Apprenticeships" to candidates leaving Secondary School and/or candidates who have just started College/Sixth Form. You can find out more information about the courses we offer by clicking the button below and sending us a message via
+                            the contact form. Additionally, you can navigate to the various information pages located in the side navigation.
+                            <br>
+                            <br>
+                            <button class="btn btn-info">More <span class="glyphicon glyphicon-chevron-right"></span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title" style="font-size: 18px">Degree Apprenticeships</h3>
+                        </div>
+                        <div class="panel-body" style="font-size: 18px">
+                            <div class="panel-image-degree"></div>
+                            We offer "Degree Apprenticeships" to candidates leaving College/Sixth Form and/or candidates who have just started University. You can find out more information about the courses we offer by clicking the button below and sending us a message via the contact
+                            form. Additionally, you can navigate to the various information pages located in the side navigation.
+                            <br>
+                            <br>
+                            <button class="btn btn-info">More <span class="glyphicon glyphicon-chevron-right"></span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <script>
         var sidenav = document.getElementById("mySidenav");
         var main = document.getElementById("main");
         var navbar = document.getElementById("navbar");
         var toggler = document.getElementById("toggler");
+        var dropper = document.getElementById("tog");
+        var dd1 = document.getElementById("dd1");
+        var dd1 = document.getElementById("dd2");
 
         function openNav() {
             if (sidenav.style.width == "0px" && main.style.marginRight == "0px") {
                 sidenav.style.width = "200px";
                 main.style.marginRight = "200px";
-                toggler.style.right = "50px";
+                toggler.style.right = "200px";
             } else {
                 sidenav.style.width = "0";
                 main.style.marginRight = "0";
                 toggler.style.transition = "0.5s";
-                toggler.style.right = "-150px";
+                toggler.style.right = "50px";
             }
         }
 
@@ -88,16 +132,15 @@
         }
     </script>
 
-
-
-
-
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="js/drop.js"></script>
+    <script src="js/scrolling-nav.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="js/jquery.easing.1.3.min.js"></script>
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 </body>
 
 </html>
