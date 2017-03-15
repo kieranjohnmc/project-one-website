@@ -7,7 +7,6 @@
 
     <!-- Optional theme -->
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/index.css">
      <link rel="stylesheet" href="css/Award_CSS.css">
@@ -24,13 +23,16 @@
                     <span class="icon-bar"></span>
                 </button>
             </div>
+    <div id="navbar" class="navbar-collapse collapse icon">
+
             <div id="navbar" class="navbar-collapse collapse icon">
+
                 <span id="toggler" class="glyphicon glyphicon-menu-hamburger navbar-right icon" onclick="openNav()" style="right: -150px"></span>
             </div>
             <!--/.nav-collapse -->
         </div>
     </nav>
-
+<div id="mySidenav" class="sidenav">
     <div id="mySidenav" class="sidenav">
         <a href="#">Home</a>
         <a href="#">Contact Us</a>
@@ -40,6 +42,9 @@
 
     <!-- Content -->
     <div class="bgimg">
+        <div class="clearfix"> 
+        <img style="background-image: ">
+            <h1>Awards</h1>
         <div class="clearfix">
             <h1 style="text-align: center; color: white; font-size: 70px; padding-top: 300px; color: black;">First Choice</h1>
         </div>
@@ -126,15 +131,70 @@ In the Midlands, we were also able to win an award for training provider of the 
     </script>
 
 
+</div>
 
+    <script>
+        var sidenav = document.getElementById("mySidenav");
+        var main = document.getElementById("main");
+        var navbar = document.getElementById("navbar");
+        var toggler = document.getElementById("toggler");
+
+        function openNav() {
+            if (sidenav.style.width == "0px" && main.style.marginRight == "0px") {
+                sidenav.style.width = "200px";
+                main.style.marginRight = "200px";
+                toggler.style.right = "50px";
+            } else {
+                sidenav.style.width = "0";
+                main.style.marginRight = "0";
+                toggler.style.transition = "0.5s";
+                toggler.style.right = "-150px";
+            }
+        }
+    </script>
 
 
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-
     <!-- Latest compiled and minified JavaScript -->
     <script src="js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
-
+<footer> <!-- Start Of Footer -->
+    <div class="row">
+        <div class="col-md-3">
+            <h2>First Choice</h2>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
+            <p>© 2017 Space Marines, All rights reserved</p>
+        </div>
+        
+        <div class="col-md-4" style="border-left:1px solid #cecccc; height:200px">
+            <h4>Apprenticeships</h4>
+                <div class="col-md-6">
+                    <ul class="pages">
+                        <li><a href="#">IT Infrastructure</a></li>
+                        <li><a href="#">Networking</a></li>
+                        <li><a href="#">Software Engineering</a></li>
+                        <li><a href="#">Creative Media</a></li>
+                        <li><a href="#">Digital Martketing</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list">
+                        <li><a href="index.html">Homepage</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                </div>
+        </div>
+        <div class="col-md-2" style="border-left:1px solid ; height:200px">
+            <h4>Follow Us</h4>
+            <ul>
+                <li><a href="https://www.facebook.com/">Facebook</a></li>
+                <li><a href="https://twitter.com/">Twitter</a></li>
+                <li><a href="https://www.linkedin.com/">Linkedin</a></li>
+                <li><a href="https://www.youtube.com/">Youtube</a></li>
+            </ul>
+        </div>
+    </div>
+</footer> <!-- End Of Footer -->
 </html>
