@@ -17,7 +17,8 @@
     <nav id="navbar" class="navbar navbar-fixed-top" style="background-color: transparent; height: 75px">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                    aria-controls="navbar">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -38,23 +39,49 @@
         <a href="#">Apprenticeships</a>
     </div>
 
-<!-- Content -->
+    <!-- Content -->
     <div id="main">
-    <div class="container">
-        
-        <div class="row"> 
-		<div class="col-md-2"> <!--page padding--></div>
-		<div class="col-md-8"> <!-- Main Contect -->
-    
-            <center><h2 style="padding-top: 75px">Contact Us</h2></center>
-        
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-2">
+                    <!--page padding-->
+                </div>
+                <div class="col-md-8">
+                    <!-- Main Contect -->
+
+                    <center>
+                        <h2 style="padding-top: 75px">Contact Us</h2>
+                    </center>
+
+                </div>
+                <div class="col-md-2">
+                    <!--page padding-->
+                </div>
+            </div>
+
         </div>
-        <div class="col-md-2"> <!--page padding--></div>
+        <div class="row">
+            <div class="col-lg-12">
+                <form action="" method="post" enctype="multipart/form-data">
+                    <fieldset>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your full name" />
+                        <br />
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email address" />
+                        <br />
+                        <label for="description">Description:</label>
+                        <textarea id="description" name="description" placeholder="Enter a short description about yourself"></textarea>
+                        <br />
+                        <input type="submit" value="Create Profile" />
+                    </fieldset>
+                </form>
+            </div>
         </div>
-        
+
     </div>
-    </div>
-    
+
     <script>
         var sidenav = document.getElementById("mySidenav");
         var main = document.getElementById("main");
@@ -85,54 +112,56 @@
         }
     </script>
 
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    
+
 
 </body>
-<footer> <!-- Start Of Footer -->
+<footer>
+    <!-- Start Of Footer -->
     <div class="row">
         <div class="col-md-3">
             <h2>First Choice</h2>
-                <address>
-                    <strong>First Choice, Inc.</strong><br>
-                    Address: Stafford Park 11,<br>
-                    Telford TF3 3AY<br>
-                    <abbr title="Phone">P:</abbr>0330 588 8000
-                </address>
+            <address>
+                <strong>First Choice, Inc.</strong><br> Address: Stafford Park 11,<br> Telford TF3 3AY<br>
+                <abbr title="Phone">P:</abbr>0330 588 8000
+            </address>
             <p>© 2017 Space Marines, All rights reserved</p>
         </div>
-        
+
         <div class="col-md-6" style="border-left:1px solid #cecccc; height:200px">
             <h4>Apprenticeships</h4>
-                <div class="col-md-4">
-                    <ul class="pages">
-                        <li><a href="Apprentices_IT.html">IT Infrastructure</a></li>
-                        <li><a href="Apprentices_Networking.html">Networking</a></li>
-                        <li><a href="Apprentices_SoftwareDev.html">Software Engineering</a></li>
-                        <li><a href="Apprentices_CreativeMedia.html">Creative Media</a></li>
-                        <li><a href="Apprentices_DigitalMarketing.html">Digital Martketing</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <ul class="pages">
-                        <li><a href="Degree_IT.html">Degree IT Infrastructure</a></li>
-                        <li><a href="Degree_Computing.html">Degree Computing</a></li>
-                        <li><a href="Degree_CreativeMedia.html">Degree Creative Media</a></li>
-                        <li><a href="Degree_Marketing.html">Degree Marketing</a></li>
-                    </ul>
-                </div>
-            	<div class="col-md-3">
-                    <ul class="list">
-                        <li><a href="index.html">Homepage</a></li>
-                        <li><a href="Location.html">Location</a></li>
-                        <li><a href="index.html/">Contact us</a></li>
-                    </ul>
-                </div>
+            <div class="col-md-4">
+                <ul class="pages">
+                    <li><a href="Apprentices_IT.html">IT Infrastructure</a></li>
+                    <li><a href="Apprentices_Networking.html">Networking</a></li>
+                    <li><a href="Apprentices_SoftwareDev.html">Software Engineering</a></li>
+                    <li><a href="Apprentices_CreativeMedia.html">Creative Media</a></li>
+                    <li><a href="Apprentices_DigitalMarketing.html">Digital Martketing</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <ul class="pages">
+                    <li><a href="Degree_IT.html">Degree IT Infrastructure</a></li>
+                    <li><a href="Degree_Computing.html">Degree Computing</a></li>
+                    <li><a href="Degree_CreativeMedia.html">Degree Creative Media</a></li>
+                    <li><a href="Degree_Marketing.html">Degree Marketing</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <ul class="list">
+                    <li><a href="index.html">Homepage</a></li>
+                    <li><a href="Location.html">Location</a></li>
+                    <li><a href="index.html/">Contact us</a></li>
+                </ul>
+            </div>
         </div>
         <div class="col-md-2" style="border-left:1px solid ; height:200px">
             <h4>Follow Us</h4>
@@ -144,6 +173,7 @@
             </ul>
         </div>
     </div>
-</footer> <!-- End Of Footer -->
+</footer>
+<!-- End Of Footer -->
 
 </html>

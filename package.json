@@ -1,0 +1,23 @@
+{
+  "name": "project-one-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kieranjohnmc/project-one-website.git"
+  },
+  "author": "Kieran. M",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kieranjohnmc/project-one-website/issues"
+  },
+  "homepage": "https://github.com/kieranjohnmc/project-one-website#readme",
+  "dependencies": {
+    "formidable": "^1.1.1"
+  }
+}
