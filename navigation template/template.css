@@ -1,0 +1,161 @@
+.sidenav {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    right: 0;
+    background-color: #282928;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 75px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.sidenav p {
+    padding-top: 640px;
+    padding-left: 2px;
+    font-weight: bold;
+    font-size: 10px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.sidenav a:hover,
+.offcanvas a:focus {
+    background-color: #ecf0f1;
+    color: black;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-right .5s;
+    padding: 20px;
+}
+
+.cover {
+    color: rgb(255, 255, 255);
+    position: relative;
+    min-height: 800px;
+    /*background: url("../img/bg.jpg") no-repeat scroll 0px 100% / cover transparent;*/
+}
+
+.icon {
+    color: #fff;
+    font-size: 38px;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+.icon span:hover {
+    color: #d3dcde;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+
+/*
+
+*/
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+.intro-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: #fff;
+}
+
+.about-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: #eee;
+}
+
+.services-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: #fff;
+}
+
+.contact-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: #eee;
+}
+
+.navitem:hover {
+    background-color: #0fffff;
+}
+
+.scroll-item {
+    margin-top: 12px;
+    font-size: 30px;
+    color: #fff;
+    text-shadow: 2px 2px black;
+}
+
+.scroll-item:hover {
+    color: black;
+}
+
+.panel-image {
+    height: 400px;
+    background: url("https://cdn.mjolner.dk/wp-content/uploads/2015/03/DSC_2297-21.jpg") no-repeat 0px 10% / cover transparent;
+    margin: -15px;
+    margin-bottom: 20px;
+}
+
+.panel-image-degree {
+    height: 400px;
+    background: url("https://media.glassdoor.com/l/ac/21/be/79/software-developer-s-desk.jpg") no-repeat 0px 10% / cover transparent;
+    margin: -15px;
+    margin-bottom: 20px;
+}
