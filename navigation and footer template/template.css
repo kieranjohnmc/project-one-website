@@ -88,11 +88,6 @@
     }
 }
 
-
-/*
-
-*/
-
 body {
     width: 100%;
     height: 100%;
@@ -159,3 +154,35 @@ html {
     margin: -15px;
     margin-bottom: 20px;
 }
+
+/* Start of Footer */
+footer{
+    color: #fff;
+    background-color: #282928;
+	padding: 60px 40px;
+}
+footer a {
+    color: #ffffff;
+}
+footer ul {
+    text-decoration: none;
+    list-style-type: none;
+}
+footer a:link {
+    text-decoration: none;
+}
+
+footer a:visited {
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: aquamarine;
+}
+
+footer a:active {
+    text-decoration: none;
+}
+
+/* End of Footer */
