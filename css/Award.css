@@ -1,3 +1,48 @@
+#Title 
+{
+	padding-top: 120px;
+}
+#TopPaddingImage
+{
+	padding-top: 23px;
+	padding-left: 90px;
+}
+#TopPaddingText
+{
+	padding-top: 100px;
+	padding-left: 90px;
+	padding-right: 500px;
+}
+#P_PaddingLeft
+{
+	padding-left: 71px;
+	padding-right: 510px;
+	padding-top: 15px;
+}
+#Img_PaddingLeft
+{
+	padding-left: 90px;
+	padding-bottom: 15px;
+}
+#P_PaddingRight
+{
+    padding-left: 487px;
+	padding-right: 50px;
+	padding-top: 15px;
+}
+#Img_PaddingRight
+{
+    padding-right: 100px;
+    padding-top: 15px;
+}
+
+.bgimg {
+    color: rgb(255, 255, 255);
+    position: relative;
+    min-height: 800px;
+    background: url("../Images/Medals.jpg") no-repeat scroll 0px 100% / cover transparent;
+}
+
 .sidenav {
     height: 100%;
     /* 100% Full-height */
@@ -41,7 +86,10 @@
     text-align: center;
     white-space: nowrap;
 }
-
+.sidenav li {
+    text-decoration: none;
+    list-style-type: none;
+}
 .sidenav a:hover,
 .offcanvas a:focus {
     background-color: #ecf0f1;
@@ -58,14 +106,14 @@
 
 #main {
     transition: margin-right .5s;
-
+    padding: 20px;
 }
 
 .cover {
     color: rgb(255, 255, 255);
     position: relative;
     min-height: 800px;
-    background: url("../img/bg.jpg") no-repeat scroll 0px 100% / cover transparent;
+    /*background: url("../img/bg.jpg") no-repeat scroll 0px 100% / cover transparent;*/
 }
 
 .icon {
@@ -87,11 +135,6 @@
         font-size: 18px;
     }
 }
-
-
-/*
-
-*/
 
 body {
     width: 100%;
@@ -147,38 +190,32 @@ html {
 }
 
 .panel-image {
-    height: 350px;
+    height: 400px;
     background: url("https://cdn.mjolner.dk/wp-content/uploads/2015/03/DSC_2297-21.jpg") no-repeat 0px 10% / cover transparent;
     margin: -15px;
     margin-bottom: 20px;
 }
 
 .panel-image-degree {
-    height: 350px;
+    height: 400px;
     background: url("https://media.glassdoor.com/l/ac/21/be/79/software-developer-s-desk.jpg") no-repeat 0px 10% / cover transparent;
     margin: -15px;
     margin-bottom: 20px;
 }
 
-
 /* Start of Footer */
-
-footer {
+footer{
     color: #fff;
-    background-color: #2c3e50;
     background-color: #282928;
-    padding: 60px 40px;
+	padding: 60px 40px;
 }
-
 footer a {
-    color: #ffffff
+    color: #ffffff;
 }
-
 footer ul {
     text-decoration: none;
     list-style-type: none;
 }
-
 footer a:link {
     text-decoration: none;
 }
@@ -195,6 +232,5 @@ footer a:hover {
 footer a:active {
     text-decoration: none;
 }
-
 
 /* End of Footer */
