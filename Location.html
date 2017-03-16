@@ -14,32 +14,40 @@
 
 </head>
 
-<body onscroll="navscroll()">
-    <nav id="navbar" class="navbar navbar-fixed-top" style="background-color: transparent; height: 75px">
+<body onscroll="navscroll()" id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <nav id="navbar" class="navbar navbar-fixed-top" style="background-color: #282928; height: 75px">
         <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse icon">
+            <div class="navbar-header navbar-right" style="margin-top: 8px;">
                 <span id="toggler" class="glyphicon glyphicon-menu-hamburger navbar-right icon" onclick="openNav()" style="right: 50px"></span>
             </div>
-            <!--/.nav-collapse -->
+            <div class="navbar-collapse collapse">
+            </div>
         </div>
     </nav>
 
     <div id="mySidenav" class="sidenav">
-        <a href="#">Home</a>
-        <a href="#">Contact Us</a>
-        <a href="#">Find Us</a>
-        <a href="#">Apprenticeships</a>
+        <a href="index.html">Home</a>
+        <a href="awards.html">Awards</a>
+        <a href="Contact.html">Contact Us</a>
+        <a href="Location.html">Find Us</a>
+        <a href="#" class="dropdown-toggle">Apprenticeships<span class="caret"></span></a>
+        <ul>
+            <li><a href="Apprentices_IT.html" style="font-size: 12px; margin-left: -30px;">IT Infrastructure</a></li>
+            <li><a href="Apprentices_Networking.html" style="font-size: 12px; margin-left: -30px;">Networking</a></li>
+            <li><a href="Apprentices_SoftwareDev.html" style="font-size: 12px; margin-left: -30px;">Software Engineering</a></li>
+            <li><a href="Apprentices_CreativeMedia.html" style="font-size: 12px; margin-left: -30px;">Creative Media</a></li>
+            <li><a href="Apprentices_DigitalMarketing.html" style="font-size: 12px; margin-left: -30px;">Digital Martketing</a></li>
+        </ul>
+        <a href="#" class="dropdown-toggle">Degree Apprenticeships<span class="caret"></span></a>
+        <ul>
+            <li><a href="Degree_IT.html" style="font-size: 12px; margin-left: -30px;">Degree IT Infrastructure</a></li>
+            <li><a href="Degree_Computing.html" style="font-size: 12px; margin-left: -30px;">Degree Computing</a></li>
+            <li><a href="Degree_CreativeMedia.html" style="font-size: 12px; margin-left: -30px;">Degree Creative Media</a></li>
+            <li><a href="Degree_Marketing.html" style="font-size: 12px; margin-left: -30px;">Degree Marketing</a></li>
+        </ul>
     </div>
 
-<!-- Content -->
+    <!-- Start of Content -->
     <div id="main">
     <div class="container">
         
@@ -50,31 +58,47 @@
             <center><h2 style="padding-top: 75px">Getting to Us</h2></center>
         
         <h3 style="padding-top: 20px">Car</h3>
-            <p>The M54 links Shropshire to the M6, where the toll road bypasses Birmingham. Other major roads serving the county include the A49, A41 and A5. 
+            <p>The M54 links Shropshire to the M6, where the toll road bypasses Birmingham. Other major roads serving the county include the A49, A41 and A5.</p> <br>
         
-            Drive times
-
-Location                           Drive times
-
-Birmingham                       45 mins
-
-Manchester                        1.5 hrs
-
-Liverpool                           1.5 hrs 
-
-London                              2.5 hrs
-
-Cardiff                               3 hrs
-
-Glasgow                            5 hrs 
+            <p>Drive times</p>
             
-        </p>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Location</th>
+                        <th>Drive Times</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Birmingham</td>
+                        <td>45 mins</td>
+                    </tr>
+                    <tr>
+                        <td>Manchester</td>
+                        <td>1.5 hrs</td>
+                    </tr>
+                    <tr>
+                        <td>Liverpool</td>
+                        <td>1.5 hrs</td>
+                    </tr>
+                    <tr>
+                        <td>London</td>
+                        <td>2.5 hrs</td>
+                    </tr>
+                    <tr>
+                        <td>Cardiff</td>
+                        <td>3 hrs</td>
+                    </tr>
+                    <tr>
+                        <td>Glasgow</td>
+                        <td>5 hrs </td>
+                    </tr>
+                </tbody>
+            </table>
                 
         <h3 style="padding-top: 20px">Train</h3>
             <p>Telford Town Centre can be easily accessed from Telford Central train station. The walking time from Telford Central to Telford Town Centre is approximately 10 minutes. There are regular services from Birmingham New Street, Wolverhampton and Shrewsbury.</p>
-        
-        <h3 style="padding-top: 20px">Bus</h3>
-        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.</p>
         <br><br>
         </div>
         <div class="col-md-2"> <!--page padding--></div>
@@ -82,9 +106,9 @@ Glasgow                            5 hrs
         
     </div>
     </div>
+    <!-- End of Content -->
 
-    
-    <div class="wrapper">
+  <div class="wrapper">
         <div id="map">
             <script>
                 function initMap() {
@@ -110,17 +134,18 @@ Glasgow                            5 hrs
         </div>
     </div>
     
-    
-    
     <script>
         var sidenav = document.getElementById("mySidenav");
         var main = document.getElementById("main");
         var navbar = document.getElementById("navbar");
         var toggler = document.getElementById("toggler");
+        var dropper = document.getElementById("tog");
+        var dd1 = document.getElementById("dd1");
+        var dd1 = document.getElementById("dd2");
 
         function openNav() {
             if (sidenav.style.width == "0px" && main.style.marginRight == "0px") {
-                sidenav.style.width = "200px";
+                sidenav.style.width = "250px";
                 main.style.marginRight = "200px";
                 toggler.style.right = "200px";
             } else {
@@ -130,28 +155,26 @@ Glasgow                            5 hrs
                 toggler.style.right = "50px";
             }
         }
-
-        function navscroll() {
-            if (document.body.scrollTop > 50) {
-                navbar.style.transition = "0.5s";
-                navbar.style.backgroundColor = "#282928";
-            } else {
-                navbar.style.transition = "0.5s";
-                navbar.style.backgroundColor = "transparent";
-            }
-        }
     </script>
 
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    
+    <script src="js/drop.js"></script>
+    
+    <script src="js/scrolling-nav.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    
+    <script src="js/jquery.easing.1.3.min.js"></script>
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    
         <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
 
 </body>
+    
 <footer> <!-- Start Of Footer -->
     <div class="row">
         <div class="col-md-3">
@@ -187,8 +210,9 @@ Glasgow                            5 hrs
             	<div class="col-md-3">
                     <ul class="list">
                         <li><a href="index.html">Homepage</a></li>
+                        <li><a href="awards.html">Awards</a></li>
                         <li><a href="Location.html">Location</a></li>
-                        <li><a href="#">Contact us</a></li>
+                        <li><a href="Contact.html">Contact us</a></li>
                     </ul>
                 </div>
         </div>

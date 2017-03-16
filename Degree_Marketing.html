@@ -14,29 +14,37 @@
     <link rel="stylesheet" href="css/Apprentices.css">
 </head>
 
-<body onscroll="navscroll()">
-    <nav id="navbar" class="navbar navbar-fixed-top" style="background-color: transparent; height: 75px">
+<body onscroll="navscroll()" id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <nav id="navbar" class="navbar navbar-fixed-top" style="background-color: #282928; height: 75px">
         <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse icon">
+            <div class="navbar-header navbar-right" style="margin-top: 8px;">
                 <span id="toggler" class="glyphicon glyphicon-menu-hamburger navbar-right icon" onclick="openNav()" style="right: 50px"></span>
             </div>
-            <!--/.nav-collapse -->
+            <div class="navbar-collapse collapse">
+            </div>
         </div>
     </nav>
 
     <div id="mySidenav" class="sidenav">
-        <a href="#">Home</a>
-        <a href="#">Contact Us</a>
-        <a href="#">Find Us</a>
-        <a href="#">Apprenticeships</a>
+        <a href="index.html">Home</a>
+        <a href="awards.html">Awards</a>
+        <a href="Contact.html">Contact Us</a>
+        <a href="Location.html">Find Us</a>
+        <a href="#" class="dropdown-toggle">Apprenticeships<span class="caret"></span></a>
+        <ul>
+            <li><a href="Apprentices_IT.html" style="font-size: 12px; margin-left: -30px;">IT Infrastructure</a></li>
+            <li><a href="Apprentices_Networking.html" style="font-size: 12px; margin-left: -30px;">Networking</a></li>
+            <li><a href="Apprentices_SoftwareDev.html" style="font-size: 12px; margin-left: -30px;">Software Engineering</a></li>
+            <li><a href="Apprentices_CreativeMedia.html" style="font-size: 12px; margin-left: -30px;">Creative Media</a></li>
+            <li><a href="Apprentices_DigitalMarketing.html" style="font-size: 12px; margin-left: -30px;">Digital Martketing</a></li>
+        </ul>
+        <a href="#" class="dropdown-toggle">Degree Apprenticeships<span class="caret"></span></a>
+        <ul>
+            <li><a href="Degree_IT.html" style="font-size: 12px; margin-left: -30px;">Degree IT Infrastructure</a></li>
+            <li><a href="Degree_Computing.html" style="font-size: 12px; margin-left: -30px;">Degree Computing</a></li>
+            <li><a href="Degree_CreativeMedia.html" style="font-size: 12px; margin-left: -30px;">Degree Creative Media</a></li>
+            <li><a href="Degree_Marketing.html" style="font-size: 12px; margin-left: -30px;">Degree Marketing</a></li>
+        </ul>
     </div>
 
         <!-- Content -->
@@ -47,13 +55,12 @@
 			<h1 class="absolute-text"> Degree Apprenticeship in Marketing</h1>
 		</div>
 
-		<br/><br/>
+		<br><br>
 		<div class="row relative">
 			<div class="col-md-2 padded"> <!--page padding-->
 			</div>
 			<div class="col-md-8 pad-top">
 				<p id="text-format">
-                
                 
                 </p>
                 <hr>
@@ -66,43 +73,6 @@
 			<div class="col-md-2"> <!--page padding-->
 			</div>
 			<div class="col-md-8">
-				<div class="relative col-md-4">
-					<div>
-						<div class="col-md-12"><h5 class="PositionH">Filters</h5></div>
-						<form>
-							<div class="col-md-12 relative">Postcode: <input class="right" type="text" name="PostCode"></div>
-							<div class="col-md-12 pad-top relative">Within:
-								<select class="right" name="Within">
-									<option value="5">5 Miles</option>
-									<option value="10">10 Miles</option>
-									<option value="15">15 Miles</option>
-									<option value="20">20 Miles</option>
-									<option value="30">30 Miles</option>
-									<option value="40">40 Miles</option>
-									<option value="More">More</option>
-								</select>
-							</div>
-							<div class="col-md-12 pad-top relative">Apprenticeship Level:
-								<select class="right" name="Level">
-									<option value="All">All Levels</option>
-									<option value="Intermediate">Intermediate</option>
-									<option value="Advanced">Advanced</option>
-									<option value="Higher">Higher</option>
-									<option value="Degree">Degree</option>
-								</select>
-							</div>
-							<div class="col-md-12 pad-top relative">Company: <br/>
-								<label id="plain"><input type="checkbox" name="SelectAll" value="Select All"> Select All</label><br/>
-								<label id="plain"><input type="checkbox" name="Fujitsu" value="Fujitsu"> Fujitsu</label><br/>
-								<label id="plain"><input type="checkbox" name="Capgemini" value="Capgemini"> Capgemini</label><br/>
-								<label id="plain"><input type="checkbox" name="Cisco" value="Cisco"> Cisco</label><br/>
-							</div>
-							<div class="col-md-12 pad-top pad-bottom relative" id="centered"><input type="submit" name="Filter" value="Filter"></div>
-						</form>
-					</div>
-				</div>
-				<div class="left-pad col-md-8">
-					<div class="left-pad" id="Positions">
 						<div>
                             <h4>Digital Marketing Apprentice at Vanilla Circus </h4>
                             <address>
@@ -155,15 +125,18 @@
 		</div>
     </div>
 
-	<script>
+    <script>
         var sidenav = document.getElementById("mySidenav");
         var main = document.getElementById("main");
         var navbar = document.getElementById("navbar");
         var toggler = document.getElementById("toggler");
+        var dropper = document.getElementById("tog");
+        var dd1 = document.getElementById("dd1");
+        var dd1 = document.getElementById("dd2");
 
         function openNav() {
             if (sidenav.style.width == "0px" && main.style.marginRight == "0px") {
-                sidenav.style.width = "200px";
+                sidenav.style.width = "250px";
                 main.style.marginRight = "200px";
                 toggler.style.right = "200px";
             } else {
@@ -173,25 +146,24 @@
                 toggler.style.right = "50px";
             }
         }
-
-        function navscroll() {
-            if (document.body.scrollTop > 50) {
-                navbar.style.transition = "0.5s";
-                navbar.style.backgroundColor = "#282928";
-            } else {
-                navbar.style.transition = "0.5s";
-                navbar.style.backgroundColor = "transparent";
-            }
-        }
     </script>
 
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    
+    <script src="js/drop.js"></script>
+    
+    <script src="js/scrolling-nav.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    
+    <script src="js/jquery.easing.1.3.min.js"></script>
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    
 </body>
+    
 <footer> <!-- Start Of Footer -->
     <div class="row">
         <div class="col-md-3">
@@ -227,8 +199,9 @@
             	<div class="col-md-3">
                     <ul class="list">
                         <li><a href="index.html">Homepage</a></li>
+                        <li><a href="awards.html">Awards</a></li>
                         <li><a href="Location.html">Location</a></li>
-                        <li><a href="#">Contact us</a></li>
+                        <li><a href="Contact.html">Contact us</a></li>
                     </ul>
                 </div>
         </div>
@@ -243,4 +216,5 @@
         </div>
     </div>
 </footer> <!-- End Of Footer -->
+
 </html>

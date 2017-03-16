@@ -1,3 +1,48 @@
+#Title 
+{
+	padding-top: 120px;
+}
+#TopPaddingImage
+{
+	padding-top: 23px;
+	padding-left: 90px;
+}
+#TopPaddingText
+{
+	padding-top: 100px;
+	padding-left: 90px;
+	padding-right: 500px;
+}
+#P_PaddingLeft
+{
+	padding-left: 71px;
+	padding-right: 510px;
+	padding-top: 15px;
+}
+#Img_PaddingLeft
+{
+	padding-left: 90px;
+	padding-bottom: 15px;
+}
+#P_PaddingRight
+{
+    padding-left: 487px;
+	padding-right: 50px;
+	padding-top: 15px;
+}
+#Img_PaddingRight
+{
+    padding-right: 100px;
+    padding-top: 15px;
+}
+
+.bgimg {
+    color: rgb(255, 255, 255);
+    position: relative;
+    min-height: 800px;
+    background: url("../Images/Medals.jpg") no-repeat scroll 0px 100% / cover transparent;
+}
+
 .sidenav {
     height: 100%;
     /* 100% Full-height */
@@ -189,10 +234,3 @@ footer a:active {
 }
 
 /* End of Footer */
-
-/* Start Google Maps */
-#map {
-    width: 100%;
-    height: 565px;    
-}
-/* End Google Maps */
