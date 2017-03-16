@@ -4,6 +4,9 @@ const formidable = require('formidable');
 const util = require('util');
 const port = 1337;
 
+var cssHeaders = 'text/css';
+var jsHeaders = 'text/javascript';
+
 //Creating the node.js webserver.
 var server = http.createServer((req, res) => {
     //Anonymous func to route by request type.
