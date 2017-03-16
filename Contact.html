@@ -3,18 +3,16 @@
 
 <head>
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <!-- Optional theme -->
-    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/index.css">
-
+    <link rel="stylesheet" href="https://cdn.rawgit.com/kieranjohnmc/f5860bcff1938acb410b2082bf6c7781/raw/0b7daa3e5894f1c628945f132dc1ca114b7046d3/index.css">
 </head>
 
 <body onscroll="navscroll()">
-    <nav id="navbar" class="navbar navbar-fixed-top" style="background-color: transparent; height: 75px">
+    <nav id="navbar" class="navbar navbar-fixed-top" style="background-color: #282928; height: 75px">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -62,20 +60,39 @@
         </div>
         <div class="row">
             <div class="col-lg-12">
-                <form action="" method="post" enctype="multipart/form-data">
-                    <fieldset>
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" placeholder="Enter your full name" />
-                        <br />
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" placeholder="Enter your email address" />
-                        <br />
-                        <label for="description">Message:</label>
-                        <textarea id="description" name="description" placeholder="Enter a short message"></textarea>
-                        <br />
-                        <input type="submit" value="Send Message" />
-                    </fieldset>
-                </form>
+                <html>
+
+                <body>
+                    <form class="form-horizontal" action="" method="post" enctype="multipart/form-data" style="margin-left: 500px;">
+                        <fieldset>
+                            <div class="form-group">
+                                <label for="name" class="col-sm-2 control-label">Name</label>
+                                <div class="col-sm-4">
+                                    <input class="form-control" type="text" id="name" name="name" placeholder="Enter your full name">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="col-sm-2 control-label">Email</label>
+                                <div class="col-sm-4">
+                                    <input class="form-control" type="email" id="email" name="email" placeholder="Enter your email address">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="description" class="col-sm-2 control-label">Message</label>
+                                <div class="col-sm-4">
+                                    <textarea class="form-control" id="description" name="description" placeholder="Enter a short description about yourself" rows="4"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-4 col-sm-offset-2">
+                                    <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </body>
+
+                </html>
             </div>
         </div>
 
@@ -99,28 +116,18 @@
                 toggler.style.right = "50px";
             }
         }
-
-        function navscroll() {
-            if (document.body.scrollTop > 50) {
-                navbar.style.transition = "0.5s";
-                navbar.style.backgroundColor = "#282928";
-            } else {
-                navbar.style.transition = "0.5s";
-                navbar.style.backgroundColor = "transparent";
-            }
-        }
     </script>
 
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
 
     <!-- Latest compiled and minified JavaScript -->
-    <script src="js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 
 </body>
-<footer>
+<footer style="margin-top: 270px">
     <!-- Start Of Footer -->
     <div class="row">
         <div class="col-md-3">
