@@ -41,7 +41,10 @@
     text-align: center;
     white-space: nowrap;
 }
-
+.sidenav li {
+    text-decoration: none;
+    list-style-type: none;
+}
 .sidenav a:hover,
 .offcanvas a:focus {
     background-color: #ecf0f1;
