@@ -3,8 +3,8 @@ package steps;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.Select;
 
+import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -17,15 +17,21 @@ public class Nav1_Steps
 	@Before
 	public void setUp()
 	{
-		System.setProperty("webdriver.chrome.driver", "C:/Users/Vanilla/workspaceRC/FirstChoiceTesting/src/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:/Users/Vanilla/workspace/FirstChoiceTesting/src/chromedriver.exe");
 		driver = new ChromeDriver();
 	}
 	
-	@Given("^user navigates to website home page$")
-	public void user_navigates_to_website_home_page() throws Throwable 
+	@After
+	public void kill()
+	{
+		driver.close();
+	}
+	
+	@Given("^user navigates to website home page test$")
+	public void user_navigates_to_website_home_page_test() throws Throwable
 	{
 		driver.get("https://localhost/project-one-website/index.html");
-		driver.manage().window().maximize(); 
+		driver.manage().window().maximize();
 	}
 
 	@When("^user selects Apprenticeships Infrastructure$")
@@ -34,12 +40,13 @@ public class Nav1_Steps
 		//driver.WaitForPageToLoad( "30000" );
 		driver.findElement(By.id("toggler")).click();
 		driver.findElement(By.id("toggler")).click();
+		driver.findElement(By.linkText("IT Infrastructure")).click();
 	}
 
 	@Then("^user is navigated to Appenticeships Infratructure page$")
 	public void user_is_navigated_to_Appenticeships_Infratructure_page() throws Throwable 
 	{
-		driver.findElement(By.linkText("IT Infrastructure")).click();
+		
 	}
 
 	@Then("^user selects to Apprenticeships Creative Media$")
@@ -47,6 +54,7 @@ public class Nav1_Steps
 	{
 	    
 	}
+	
 	@Then("^user is navigated to Apprenticeships Creative Media page$")
 	public void user_is_navigated_to_Apprenticeships_Creative_Media_page() throws Throwable 
 	{

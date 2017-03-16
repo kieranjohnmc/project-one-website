@@ -13,8 +13,8 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 		features={"src/features"},
 		glue={"steps"}, 
-		monochrome=true, 
-		tags={"@FunctionalTest, @LoginTest"},
+		monochrome=true,
+		tags=("@"),
 		plugin={"pretty","html:target/cucumber","com.cucumber.listener.ExtentCucumberFormatter"})
 public class RunCuke 
 {
@@ -26,8 +26,8 @@ public class RunCuke
         ExtentCucumberFormatter.loadConfig(new File("src/extent-config.xml"));
 
         // User can add the system information as follows
-        ExtentCucumberFormatter.addSystemInfo("Browser Name", "Firefox");
-        ExtentCucumberFormatter.addSystemInfo("Browser version", "v47.0.1");
+        ExtentCucumberFormatter.addSystemInfo("Browser Name", "Chrome");
+        ExtentCucumberFormatter.addSystemInfo("Browser version", "v56.0.2924.87");
         ExtentCucumberFormatter.addSystemInfo("Selenium version", "v2.53.1");
     	    }
 }
