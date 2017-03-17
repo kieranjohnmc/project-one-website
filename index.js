@@ -2,7 +2,7 @@ const http = require('http');
 const fs = require('fs');
 const formidable = require('formidable');
 const util = require('util');
-const mysql = require('mysql');
+const nodemailer = require('nodemailer');
 
 const port = 1337;
 const conn = mysql.createConnection({
@@ -10,24 +10,6 @@ const conn = mysql.createConnection({
     user: 'root',
     password: '',
     database: 'ale1'
-});
-
-var queryData = [];
-
-
-conn.connect((err) => {
-    var sql = 'SELECT * FROM messages';
-
-    conn.query(sql, (err, rows, f) => {
-        if (err) {
-            console.log(err);
-        }
-        connection.end();
-
-        for (x = 0; x < rows.length; x++) {
-            queryData[i] = rows;
-        }
-    });
 });
 
 //Creating the node.js webserver.
@@ -56,14 +38,7 @@ function present(res) {
 function processForm(req, res) {
     var form = new formidable.IncomingForm();
     form.parse(req, (err, fields, files) => {
-        res.writeHead(200, {
-            'content-type': 'text/plain'
-        });
-        res.write('Data Received:\n\n');
-        res.end(util.inspect({
-            fields: fields,
-            files: files
-        }));
+        
     });
 }
 console.log("Listening on : " + port);
