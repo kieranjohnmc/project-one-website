@@ -14,7 +14,6 @@ import cucumber.api.junit.Cucumber;
 		features={"src/features"},
 		glue={"steps"}, 
 		monochrome=true,
-		tags=("@"),
 		plugin={"pretty","html:target/cucumber","com.cucumber.listener.ExtentCucumberFormatter"})
 public class RunCuke 
 {
