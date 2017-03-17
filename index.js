@@ -5,11 +5,13 @@ const util = require('util');
 const nodemailer = require('nodemailer');
 
 const port = 1337;
-const conn = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '',
-    database: 'ale1'
+
+let transporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+        user: 'kieranmcbride13@gmail.com',
+        pass: 'Sdxk4115'
+    }
 });
 
 //Creating the node.js webserver.
@@ -37,8 +39,33 @@ function present(res) {
 //Presents the data from the POST request.
 function processForm(req, res) {
     var form = new formidable.IncomingForm();
+    var s = "";
     form.parse(req, (err, fields, files) => {
-        
+        console.log(fields);
     });
-}
+
+    console.log(s);
+
+    let mailOptions = {
+        from: '"Kieran McBride" <kieranmcbride13@gmail.com>',
+        to: 'kieranmcbride13@outlook.com',
+        subject: 'Contact Reqest',
+        text: 'Thanks for contacting us. This is an automated email and an operator will be in touch within 3-5 working days.',
+    }
+    transporter.sendMail(mailOptions, (error, info) => {
+        if (error) {
+            return console.log(error);
+        }
+
+        console.log('Message %s sent %s!', info.messageId, info.response);
+    });
+    fs.readFile('Contact.html', (err, data) => {
+        res.writeHead(200, {
+            'Content-Type': 'text/html',
+            'Content-Length': data.length
+        });
+        res.write(data);
+        res.end();
+    });
+};
 console.log("Listening on : " + port);
